@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>API Example</h1>
+    <div id="character"></div>
+
+    <script>
+      const name = "Thorniel"; // Reemplaza esto con el nombre de un personaje válido en Tibia
+      const url = `https://dev.tibiadata.com/v4/character/${name}`;
+      
+      fetch(url)
+        .then(response => response.json()) 
+        .then(data => {
+            const level = data.character.character.level;
+            console.log(level);
+            const characterText = `El personaje ${name} tiene nivel ${level}.`;
+            document.getElementById("character").innerHTML = characterText;
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
