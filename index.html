@@ -4,24 +4,35 @@
     <title>API Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>API Example</h1>
-    <div id="character"></div>
-
-    <script>
-      const name = "Thorniel"; // Reemplaza esto con el nombre de un personaje válido en Tibia
-      const url = `https://dev.tibiadata.com/v4/character/${name}`;
-      
-      fetch(url)
-        .then(response => response.json()) 
-        .then(data => {
-            const level = data.character.character.level;
-            console.log(level);
-            const characterText = `El personaje ${name} tiene nivel ${level}.`;
-            document.getElementById("character").innerHTML = characterText;
-        })
-        .catch(error => console.error(error));
-    </script>
-  </body>
-</html>
+    <header>
+      <h1>API Example</h1>
+    </header>
+    
+    <nav class="navbarNav"> <!-- Cambio de class a "navbarNav" -->
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#titulo1">Character</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo2">Guilds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo3">Highscores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo3">Houses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo3">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo3">Worlds</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#titulo3">Prueba</a>
+        </li>
+        <!-- Agrega aquí los demás elementos de la barra de

@@ -1,0 +1,77 @@
+body {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  /* Estilo para el menú lateral */
+  .navbarNav {
+    top: 0;
+    width: 200px;
+    height: 100%;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    left: 0; /* Cambio de right a left */
+    /* Añadir los siguientes estilos */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .navbarNav .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbarNav .navbar-nav .nav-item {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .navbarNav .navbar-nav .nav-item:hover {
+    background-color: #5e5d5d;
+  }
+  
+  .navbarNav .navbar-nav .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  
+  /* Estilo para el contenido principal */
+  main {
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #character {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin-left: 0;
+    }
+  }
+  
