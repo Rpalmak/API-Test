@@ -22,7 +22,6 @@ body {
     width: 200px;
     height: 100%;
     margin: 5px;
-    background-color: #333;
     color: #fff;
     left: 0; /* Cambio de right a left */
     /* Añadir los siguientes estilos */
@@ -42,9 +41,6 @@ body {
     border-bottom: 1px solid #555;
   }
   
-  .navbarNav .navbar-nav .nav-item:hover {
-    background-color: #5e5d5d;
-  }
   
   .navbarNav .navbar-nav .nav-item a {
     color: #fff;
@@ -73,5 +69,35 @@ body {
     main {
       margin-left: 0;
     }
+  }
+
+  .nav-item {
+    background-color: #663300;
+    border: 2px solid #997a00;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.4);
+    color: #ffe6b3;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #804d00;
+    color: #ffcc80;
+    transform: scale(1.1);
+  }
+  
+  .nav-item:active {
+    background-color: #4d2600;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transform: scale(0.95);
   }
   
