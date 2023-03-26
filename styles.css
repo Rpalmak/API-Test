@@ -8,107 +8,102 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-}
-
+  }
+  
+  .container-fluid {
+  width: auto !important;
+  max-width: none !important;
+  }
   
   header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
   }
-
+  
   footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    height: 50px;
-    line-height: 50px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
   }
   
-  /* Estilo para el menú lateral */
-  .navbarNav {
-    top: 0;
-    width: 200px;
-    height: 100%;
-    margin: 5px;
-    color: #fff;
-    left: 0; /* Cambio de right a left */
-    /* Añadir los siguientes estilos */
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  /* Estilo para el menú lateral /
+  .navbar-nav {
+  top: 0;
+  width: 200px;
+  height: 100%;
+  margin: 5px;
+  color: #fff;
+  left: 0; / Cambio de right a left /
+  / Añadir los siguientes estilos */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   }
   
-  .navbarNav .navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .navbar-nav .nav-item {
+  padding: 10px;
+  border-bottom: 1px solid #555;
   }
   
-  .navbarNav .navbar-nav .nav-item {
-    padding: 10px;
-    border-bottom: 1px solid #555;
+  .navbar-nav .nav-item a {
+  color: #fff;
+  text-decoration: none;
   }
   
-  
-  .navbarNav .navbar-nav .nav-item a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-
-  
-  /* Estilo para el contenido principal */
   main {
-    margin-left: 200px;
-    margin-right: 20px;
-    padding: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8); /* Opacidad del 80% */
+  color: #fff; /* Texto blanco */
   }
   
   h1 {
-    color: #333;
+  color: #333;
   }
   
   #character {
-    margin-top: 20px;
-    font-size: 1.2rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
   }
   
   @media (max-width: 768px) {
-    main {
-      margin-left: 0;
-    }
+  main {
+  margin-left: 0;
   }
-
+  }
+  
   .nav-item {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px #000;
-    color: #fff;
-    background-color: #292929;
-    border: 1px solid #666;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+  color: #fff;
+  background-color: #292929;
+  border: 1px solid #666;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
   }
   
   .nav-item:hover {
-    background-color: #444;
-    border-color: #999;
-    transform: scale(1.05);
+  background-color: #444;
+  border-color: #999;
+  transform: scale(1.05);
   }
   
   .nav-item:active {
-    background-color: #1f1f1f;
-    border-color: #666;
-    transform: scale(0.95);
+  background-color: #1f1f1f;
+  border-color: #666;
+  transform: scale(1.05);
   }
   
   .nav-item::before {
@@ -120,6 +115,14 @@ body {
     width: 20px;
     height: 20px;
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
   
 
 

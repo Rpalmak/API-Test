@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <header class="mb-0">
+      <h1>API Example</h1>
+    </header>
+    
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-light col-md-2 col-xl-2">
+          <ul class="navbar-nav flex-column">
+            <li class="nav-item active">
+              <a class="nav-link" href="characters.html">Character</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo2">Guilds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo3">Highscores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo3">Houses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo3">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo3">Worlds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titulo3">Prueba</a>
+            </li>
+          </ul>
+        </nav>
+        <main class="col-md-10 col-xl-10">
+          <h2>Buscar personaje</h2>
+          <form id="character-form">
+            <label for="character-name">Nombre del personaje:</label>
+            <input type="text" id="character-name" name="name">
+            <button type="submit">Buscar</button>
+          </form>
+          <div id="character-data"></div> 
+        </main>
+      </div>
+    </div>
+
+    
+    
+    <footer>
+        <p>Este es el pie de página</p>
+      </footer>
+  </body>
+</html>
