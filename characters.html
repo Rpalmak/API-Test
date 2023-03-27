@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
-
     <header class="mb-0">
       <h1>API Example</h1>
     </header>
@@ -20,25 +17,25 @@
         <nav class="navbar navbar-expand-lg navbar-light col-md-2 col-xl-2">
           <ul class="navbar-nav flex-column">
             <li class="nav-item active">
-              <a class="nav-link" href="characters.html">Character</a>
+              <a class="nav-link" href="#">Character</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo2">Guilds</a>
+              <a class="nav-link" href="#">Guilds</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo3">Highscores</a>
+              <a class="nav-link" href="#">Highscores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo3">Houses</a>
+              <a class="nav-link" href="#">Houses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo3">News</a>
+              <a class="nav-link" href="#">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo3">Worlds</a>
+              <a class="nav-link" href="#">Worlds</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#titulo3">Prueba</a>
+              <a class="nav-link" href="#">Prueba</a>
             </li>
           </ul>
         </nav>
@@ -47,17 +44,33 @@
           <form id="character-form">
             <label for="character-name">Nombre del personaje:</label>
             <input type="text" id="character-name" name="name">
-            <button type="submit">Buscar</button>
+            <button type="submit" id="search-button">Buscar</button>
           </form>
-          <div id="character-data"></div> 
+          <div id="character-data">
+            <div class="character-box">
+              <div class="character-icon"></div>
+              <div class="character-info">
+                <h2 id="name"></h2>
+                <p class="level">Nivel: <span id="level"></span></p>
+                <p class="vocation">Vocación: <span id="vocation"></span></p>
+                <p class="sex">Sexo: <span id="sex"></span></p>
+                <p class="title">Título: <span id="title"></span></p>
+                <p class="achievements">Logros: <span id="achievements"></span></p>
+                <p class="deaths">Muertes: <span id="deaths"></span></p>
+              </div>
+            </div>
+          </div>
+          
+          
         </main>
       </div>
     </div>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
     
     <footer>
-        <p>Este es el pie de página</p>
-      </footer>
+      <p>Este es el pie de página</p>
+    </footer>
   </body>
 </html>
